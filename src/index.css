@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e3a8a,
+    #2563eb
+  );
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Login Card */
+
+.login-card {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* Dashboard Cards */
+
+.card {
+  border: none !important;
+  border-radius: 18px !important;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card-body h6 {
+  color: #64748b;
+  font-weight: 600;
+}
+
+.card-body h2 {
+  font-weight: 700;
+}
+
+.card-body h4 {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+/* Table Styles */
+
+.table {
+  background-color: transparent !important;
+  --bs-table-bg: rgba(255, 255, 255, 0.85);
+}
+
+.table tbody tr {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.table td {
+  background-color: transparent !important;
+}
+
+/* Statistics Cards */
+
+.stats-card-1 {
+  background: linear-gradient(
+    135deg,
+    #3b82f6,
+    #2563eb
+  );
+  color: white;
+}
+
+.stats-card-2 {
+  background: linear-gradient(
+    135deg,
+    #10b981,
+    #059669
+  );
+  color: white;
+}
+
+.stats-card-3 {
+  background: linear-gradient(
+    135deg,
+    #ef4444,
+    #dc2626
+  );
+  color: white;
+}
+
+.stats-card-4 {
+  background: linear-gradient(
+    135deg,
+    #f59e0b,
+    #d97706
+  );
+  color: white;
+}
+
+/* Form Section */
+
+.form-control {
+  border-radius: 12px !important;
+  padding: 12px !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 4px rgba(37,99,235,.2);
+  border-color: #2563eb;
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 12px !important;
+  font-weight: 600;
+}
+
+.btn-success:hover,
+.btn-primary:hover,
+.btn-warning:hover,
+.btn-danger:hover {
+  transform: scale(1.03);
+  transition: .3s;
+}
+
+/* Table */
+
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: #1e293b;
+  color: white;
+}
+
+.table-hover tbody tr:hover {
+  background: #f1f5f9;
+}
+
+/* Grade Badges */
+
+.grade-a {
+  background: #22c55e;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.grade-b {
+  background: #3b82f6;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.grade-c {
+  background: #f59e0b;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.grade-f {
+  background: #ef4444;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* Search Box */
+
+.search-box {
+  border-radius: 15px;
+  border: none;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .card-body h2 {
+    font-size: 1.5rem;
+  }
+
+  .table {
+    font-size: 14px;
+  }
+}
